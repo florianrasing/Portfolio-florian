@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- defined the document. sets title, sets icon at the top and links css -->
+<!-- this document has been validated by W3school https://validator.w3.org/nu/#textarea. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a paragraph about who florian rasing is.">
+    <title>Home</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<!-- sets body into a container. defines the nav on the left and puts content inside content-box + paragraph. select and choice use a script.js file to get a nice looking modern website that is interactive -->
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>FLORIAN<br>RASING<br>.COM</h1>
+                <ul>
+                    <li><button class="clicked" onClick="window.location.reload();">Home</button></li>
+                    <li><a href="extra.html">Extra's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="interview.html">Interview</a></li>
+                </ul>
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valide CSS!">
+            </nav>
+        </header>
+        <div class="content-box">
+            <div class="paragraph" id="paragraph">
+                <h2>Main Page</h2>
+                <p>Deze website is gemaakt door Florian Rasing.</p>
+                <p>
+                    Ik ben Florian en ik ben goed in:
+                    <select name="choice" id="choice">
+                        <option value="0" selected>Kies een optie</option>
+                        <option value="1">Leren</option>
+                        <option value="2">Design</option>
+                        <option value="3">Luisteren naar feedback</option>
+                    </select>
+                </p>
+                <p id="result">...</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
